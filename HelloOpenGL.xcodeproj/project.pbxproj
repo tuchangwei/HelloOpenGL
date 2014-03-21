@@ -22,6 +22,9 @@
 		CF185C1618DC30500051E95B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF185BF518DC30500051E95B /* UIKit.framework */; };
 		CF185C1E18DC30500051E95B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF185C1C18DC30500051E95B /* InfoPlist.strings */; };
 		CF185C2018DC30500051E95B /* HelloOpenGLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF185C1F18DC30500051E95B /* HelloOpenGLTests.m */; };
+		CF185C2B18DC309A0051E95B /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF185C2A18DC309A0051E95B /* OpenGLView.m */; };
+		CF185C2D18DC30BF0051E95B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF185C2C18DC30BF0051E95B /* QuartzCore.framework */; };
+		CF185C2F18DC30CB0051E95B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF185C2E18DC30CB0051E95B /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,10 @@
 		CF185C1B18DC30500051E95B /* HelloOpenGLTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloOpenGLTests-Info.plist"; sourceTree = "<group>"; };
 		CF185C1D18DC30500051E95B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CF185C1F18DC30500051E95B /* HelloOpenGLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloOpenGLTests.m; sourceTree = "<group>"; };
+		CF185C2918DC309A0051E95B /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		CF185C2A18DC309A0051E95B /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
+		CF185C2C18DC30BF0051E95B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CF185C2E18DC30CB0051E95B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF185C2F18DC30CB0051E95B /* OpenGLES.framework in Frameworks */,
+				CF185C2D18DC30BF0051E95B /* QuartzCore.framework in Frameworks */,
 				CF185BF418DC30500051E95B /* CoreGraphics.framework in Frameworks */,
 				CF185BF618DC30500051E95B /* UIKit.framework in Frameworks */,
 				CF185BF218DC30500051E95B /* Foundation.framework in Frameworks */,
@@ -103,6 +112,8 @@
 		CF185BF018DC30500051E95B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CF185C2E18DC30CB0051E95B /* OpenGLES.framework */,
+				CF185C2C18DC30BF0051E95B /* QuartzCore.framework */,
 				CF185BF118DC30500051E95B /* Foundation.framework */,
 				CF185BF318DC30500051E95B /* CoreGraphics.framework */,
 				CF185BF518DC30500051E95B /* UIKit.framework */,
@@ -122,6 +133,8 @@
 				CF185C0A18DC30500051E95B /* ViewController.m */,
 				CF185C0C18DC30500051E95B /* Images.xcassets */,
 				CF185BF818DC30500051E95B /* Supporting Files */,
+				CF185C2918DC309A0051E95B /* OpenGLView.h */,
+				CF185C2A18DC309A0051E95B /* OpenGLView.m */,
 			);
 			path = HelloOpenGL;
 			sourceTree = "<group>";
@@ -256,6 +269,7 @@
 				CF185C0B18DC30500051E95B /* ViewController.m in Sources */,
 				CF185C0218DC30500051E95B /* AppDelegate.m in Sources */,
 				CF185BFE18DC30500051E95B /* main.m in Sources */,
+				CF185C2B18DC309A0051E95B /* OpenGLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
